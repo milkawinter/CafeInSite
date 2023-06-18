@@ -1,0 +1,152 @@
+﻿<!DOCTYPE html>
+<html lang="">
+
+<head>
+  <meta charset="utf-8" />
+  <title>קפה IN - צור קשר</title>
+  <meta name="description" content="דף צור קשר" />
+  <meta name="keywords" content="צור קשר, טופס, שלח, קפה, שאלות" />
+  <meta name="author" content="אלעד טל ומאי וינטר" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <link rel="icon" href="photos/coffeemug.png" />
+  <!-- CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css"
+    integrity="sha384-oAOxQR6DkCoMliIh8yFnu25d7Eq/PHS21PClpwjOTeU2jRSq11vu66rf90/cZr47" crossorigin="anonymous">
+
+  <link href="styles/reset.css" rel="stylesheet" />
+  <link href="styles/myStyle.css" rel="stylesheet" />
+
+  <!-- JS -->
+  <script src="jScripts/jquery-1.12.0.min.js"></script>
+
+
+</head>
+
+<body>
+  <div id="container2" class="container1">
+    <header id="header">
+      <nav aria-label="mainNav" class="mainNav">
+        <ul>
+          <li> <a href="index.html"><img src="photos/coffeemug.png" alt="" id="logo" />קפה IN</a></li>
+          <li>
+            <a href="" class="notActive">
+              בואו נכין קפה
+            </a>
+            <ul>
+              <li><a href="blackcoffee.html"> קפה שחור</a></li>
+              <li class="notActive"><a href="" class="notActive"> אספרסו</a></li>
+              <li class="notActive"><a href="" class="notActive"> לאטה</a></li>
+              <li class="notActive"><a href="" class="notActive"> קפה קר</a></li>
+              <li class="notActive"><a href="" class="notActive"> קפוצ׳ינו</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="">
+              קפה על המפה
+            </a>
+            <ul>
+              <li><a href="korea.html"> קוריאה</a></li>
+              <li class="notActive"><a href="" class="notActive"> איטליה</a></li>
+              <li class="notActive"><a href="" class="notActive"> צרפת</a></li>
+              <li class="notActive"><a href="" class="notActive"> ספרד</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="" class="notActive">
+              אמנות ציור בקצף
+            </a>
+            <ul>
+              <li class="notActive"><a href="" class="notActive"> ציור פרח</a></li>
+              <li class="notActive"><a href="" class="notActive"> ציור סמיילי</a></li>
+              <li class="notActive"><a href="" class="notActive"> ציור לב</a></li>
+              <li class="notActive"><a href="" class="notActive"> ציור שמש</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="" class="notActive">
+              צור עמדת קפה ביתית
+            </a>
+            <ul>
+              <li class="notActive"><a href="" class="notActive"> עמדה הכוללת מכונת קפה</a></li>
+              <li class="notActive"><a href="" class="notActive"> עמדה ללא מכונת קפה</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main">
+      <div id="content">
+        <div>
+          <div id="opening">
+            <h1 class="h1">צור קשר</h1>
+            <h2 class="h2">קפה IN - מאוהבי קפה לאוהבי קפה</h2>
+            <nav aria-label="breadcrumbs" class="breadcrumbsnav">
+              <ul>
+                <li><a href="index.html"> דף הבית</a> > </li>
+                <li> צור קשר:</li>
+              </ul>
+            </nav>
+          </div>
+          <div id="textandform">
+            <div id="text">
+              <p>יש קפה חדש שאתם רוצים להכיר לנו?</p>
+              <p>יש לכם שאלה או הערה על התוכן שלנו?</p>
+              <p>משהו לא עובד לכם? לא מצליחים להכין כמו שצריך?</p>
+              <p>בואו וספרו לנו!</p>
+            </div>
+            <form>
+              <input type="hidden" id="myEmail" name="name" value=" ">
+              <p class="asterisk">* שדה חובה</p><br />
+              <label for="fullName">
+                <span class="asterisk">*</span> שם מלא:<br />
+                <input id="fullName" type="text" placeholder="הזן שם מלא" required />
+              </label>
+              <br /><br />
+              <fieldset>
+  
+                <legend><span class="asterisk">*</span>מגדר:</legend><br />
+                <label for="female" class="gender">
+                  <input id="female" type="radio" name="gender" checked />נקבה
+                </label><br />
+                <label for="male" class="gender">
+                  <input id="male" type="radio" name="gender" />זכר
+                </label><br />
+                <label for="other" class="gender">
+                  <input id="other" type="radio" name="gender" /> אחר
+                </label>
+                <br /><br />
+                <lable for="email" class="label" id="email1">
+                  <span class="asterisk">*</span> כתובת מייל:<br />
+                  <input id="email" type="email" name="email" placeholder="הזן כתובת מייל" required />
+                </lable>
+                <br /><br />
+                <lable for="message" class="label" id="message">
+                  <span class="asterisk">*</span> תוכן ההודעה:<br />
+                  <textarea id="message" rows="8" cols="30" placeholder="הזן טקסט כאן"></textarea>
+                </lable>
+                <br />
+                <label for="submitbtn">
+                  <input id="submitbtn" type="submit" value="שלח" class="label" />
+                </label>
+                <div id="feedback"></div>
+              </fieldset>
+            </form>
+          </div>
+        </div>
+        <img src="photos/coffeeoneline.png" alt="" title="ציור של יד עם מכונת קפה בסגנון oneline " id="contactimg" />  
+      </div>
+<footer>
+        <nav aria-label="footerNav" id="footernavcontact" class="footernav">
+          <ul>
+            <li><a href="about.html">אודות</a></li>
+            <li><a href="sitemap.html">מפת האתר</a></li>
+            <li><a href="contactus.html">צור קשר</a></li>
+          </ul>
+        </nav>
+      </footer>
+    </main>
+
+  </div>
+</body>
+
+</html>
